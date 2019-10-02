@@ -1,0 +1,150 @@
+# Exercices Python
+
+## Etape 1 : DÃ©clarons quelques variables
+
+Dans un premier temps nous allons simplement utiliser l'interprÃ©teur Python. Pour cela il suffit d'ouvrir un terminal et de taper la commande `python`. Vous devriez voir dans votre terminal en dÃ©but de ligne `>>>`. Si c'est le cas, c'est le signe que vous pouvez Ã©crire du Python.
+
+A faire : dÃ©clarer des variables permettant de vous dÃ©crire avec :
+
+- Votre prÃ©nom
+- Votre nom
+- Votre age
+- Votre taille en cm
+- Quelques lignes qui expliquent pourquoi vous rejoignez la formation
+
+## Etape 2 : Utilisons les opÃ©rateurs
+
+### Ex1
+
+```python
+mystery1 = 8 + 6
+mystery2 = 8 - 6
+```
+
+Afficher avec **print** la variable qui est Ã©gale Ã  -2.
+
+### Ex2
+
+```python
+zebrasInZoo = 8
+giraffesInZoo = 4
+```
+
+CrÃ©er une variable **animalsInZoo** qui contient le nombre total d'animaux dans le zoo. Afficher cette variable.
+
+### Ex3
+
+```python
+prixInitial = 1500
+tva = 0.20
+```
+
+CrÃ©er une variable **prixFinal** qui Ã©gale au prix initial plus le prix initial multipliÃ© par la tva. Afficher cette variable.
+
+### Ex4 : modulo et division entiÃ¨re
+
+1. Remplir des boites de 6 Å“ufs! CrÃ©er une variable **nbBoites** qui contient le nombre de boites pleines et une variable **nbOeufsRestant** pour le nombre dâ€™Å“ufs qui restent.
+
+```python
+nbOeufsParBoite = 6
+nbOeufsTotal = 145
+
+nbBoites
+```
+
+2. Dans un jeu de 32 cartes (7, 8, 9, ..., roi, as pour les couleurs pique, cÅ“ur, carreau, trÃ¨fle), on dÃ©cide d'associer Ã  chaque carte un numÃ©ro.
+Le numÃ©ro de la carte est obtenu en multipliant le numÃ©ro de la couleur (0,1,2 ou 3) par le numÃ©ro de la figure (0,1,2,3 ... 7).
+
+Exemple :
+le 9 de pique a pour numÃ©ro = 2 + 0*8 = 2 (carte nÂ°2 de la couleur 0)
+la dame de cÅ“ur a pour numÃ©ro = 5 + 1*8 = 12 (carte nÂ°5 de la couleur 1)
+
+```python
+numero_carte_mystere = 28
+```
+
+CrÃ©er une variable **numero_couleur** et **numero_figure** Ã  retrouver Ã  partir du numÃ©ro de la carte mystÃ¨re. Vous pouvez vÃ©rifier que votre mÃ©thode fonctionne en retrouvant la couleur de la carte nÂ°2 (9 de pique) ou de la carte nÂ°13 (dame de cÅ“ur).
+
+### Ex5 : infÃ©rieur, supÃ©rieur
+
+```python
+prixInitial = 1500
+tva = 0.20
+
+budget = 2000
+```
+
+CrÃ©er une variable **budgetSuffisant** qui indique si le budget est supÃ©rieur ou Ã©gal au prix initial plus le prix initial multipliÃ© par la tva. Afficher cette variable.
+
+### Ex6 : Ã©galitÃ©
+
+Pour Ã©viter les doublons, on cherche Ã  comparer des albums par rapport Ã  leur durÃ©e totale et au nombre de chansons par album.
+
+```python
+songsA = 9
+songsB = 9
+albumLengthA = 41
+albumLengthB = 53
+```
+
+CrÃ©er une variable **sameSongs** qui est vraie si les deux albums contiennent le mÃªme nombre de chansons.
+CrÃ©er une variable **sameAlbumLength** qui est vraie si les deux albums ont la mÃªme longueur au total. Afficher ces variables.
+
+### Ex7 : chaÃ®nes et nombres
+
+```python
+formateur = 'Jules'
+langage = 'java'
+version = 1.8
+```
+
+CrÃ©er une variable **description** du type :
+Mon formateur <formateur> est fan de <langage>, surtout depuis la version <version>!!
+
+Et afficher cette variable.
+
+## Etape 3 : Conditionnons notre code
+
+```python
+periode = "a definir"
+heure = 10
+```
+
+1. CrÃ©er une condition **if** qui affecte la valeur "matinÃ©e" Ã  la variable **periode** si l'heure est infÃ©rieure Ã  10. Afficher ensuite un message du type : "bonne <periode>"
+2. Ajouter un deuxiÃ¨me **if** qui affecte la valeur "aprÃ¨s-midi" Ã  la variable **periode** si l'heure est infÃ©rieure Ã  18. Tester avec heure = 10, cela devrait afficher "bonne aprÃ¨s-midi" ...
+3. Corriger en remplaÃ§ant le **if** prÃ©cÃ©dent par **elif**. Tester avec heure = 10 et heure = 15.
+4. Ajouter un **elif** si l'heure est infÃ©rieure Ã  0. Dans ce cas afficher "erreur de saisie" (remarque il aurait mieux valu arrÃªter le programme..)
+5. Ajouter un **elif** si l'heure est supÃ©rieure Ã  24. Dans ce cas afficher "erreur de saisie" (remarque il aurait mieux valu arrÃªter le programme..)
+6. Grouper les deux cas prÃ©cÃ©dent en utilisant un **or**.
+7. Dans tous les autres cas, affecter la valeur "soirÃ©e" Ã  la variable **periode**. Tester avec heure = 8, heure = -5, heure = 12, heure = 18, heure = 23, heure = 35.
+
+> Remarque : un bon programmeur (donc un peu flemmard), aura certainement prÃ©fÃ©rÃ© utiliser le **else** pour toutes les heures invalides plutÃ´t que pour soirÃ©e, car cela permet de ne pas Ã©crire la condition compliquÃ©e avec le **or**.
+
+## Etape 4 : CrÃ©ons des fonctions
+
+- CrÃ©er une fonction qui renvoie l'aire d'un triangle en prenant en paramÃ¨tres base et hauteur.
+- CrÃ©er une fonction qui renvoie le volume d'une sphÃ¨re en prenant en paramÃ¨tre son rayon.
+- CrÃ©er une fonction qui renvoie un message donnant l'IMC d'une personne. Elle prendra en paramÃ¨tre le prÃ©nom de la personne, son poids en kg et sa taille en cm.
+
+## Etape 5 : Listes
+
+CrÃ©er une liste qui contient tous les prÃ©noms du groupe. Trier cette liste. Afficher tous les prÃ©noms qui ont un indice impair.
+CrÃ©er deux sous-listes groupe1 et groupe2 contenant chacun la moitiÃ© du groupe.
+
+## Etape 6 : Boucles
+
+Parcourir la liste prÃ©cÃ©dente. Pour chaque prÃ©nom, afficher la longueur du prÃ©nom avec la fonction **len**.
+Ajouter une variable **maximum** au dÃ©but du programme qui vaut 0 au dÃ©but. Pour chaque prÃ©nom, **si** la longueur du prÃ©nom est supÃ©rieur au maximum, remplacer maximum par cette valeur.
+Afficher le prÃ©nom le plus long Ã  la fin avec un message : "le prÃ©nom le plus long est <prÃ©nom>, il possÃ¨de <nbLettres> lettres"
+
+## Etape 7 : EntrÃ©es / Sorties
+
+- CrÃ©er un programme qui demande Ã  l'utilisateur de se prÃ©senter : prÃ©nom, nom et age. Utilisez la console pour afficher un message d'accueil personnalisÃ© du type "Bonjour _Jules Grand_ tu as _30 ans_ c'est bien Ã§a ?"
+- CrÃ©er un programme qui fera la mÃªme chose tout en Ã©crivant les informations reÃ§ues dans un fichier texte. Le fichier devra Ãªtre nommÃ© _prenom-nom.txt_
+- CrÃ©er un programme qui va lire le fichier [films-2018.txt](../ressource/films-2018.txt) et indiquer combien il y a de films sortis en 2018.
+
+**Bonus**
+
+- CrÃ©er un programme qui va lire le fichier [villes-france.txt](../ressource/villes-france.txt) et indiquer combien de fois apparaÃ®t _TOULOUSE_ dans le fichier.
+- CrÃ©er un programme qui va lire le fichier [villes-france.txt](../ressource/villes-france.txt) et crÃ©er un nouveau fichier sans doublons (aprÃ¨s modification, le nouveau fichier ne doit contenir qu'une seule fois le mÃªme nom de ville).
+- CrÃ©er un programme qui va lire le fichier [villes-france.txt](../ressource/villes-france.txt) et crÃ©er un nouveau fichier dans lequel chaque ligne donnera le nom d'une ville en affichant le nombre dâ€™occurrence dans le fichier de dÃ©part. Ce fichier devra Ãªtre triÃ© par ordre alphabÃ©tique.
