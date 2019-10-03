@@ -41,5 +41,11 @@ with open('./villes-france.txt', 'r') as f:
 print(recherche + " est present "+str(occurence)+" fois ")
 
 # - CrÃ©er un programme qui va lire le fichier [villes-france.txt](../ressource/villes-france.txt) et crÃ©er un nouveau fichier sans doublons (aprÃ¨s modification, le nouveau fichier ne doit contenir qu'une seule fois le mÃªme nom de ville).
+# doublons = []
+# with open('./villes-france.txt', 'r') as f:
+#   for line in f:
+#       if occurence_existe(line):
+#         occurence = occurence + 1
+
 # - CrÃ©er un programme qui va lire le fichier [villes-france.txt](../ressource/villes-france.txt) et crÃ©er un nouveau fichier dans lequel chaque ligne donnera le nom d'une ville en affichant le nombre dâ€™occurrence dans le fichier de dÃ©part. Ce fichier devra Ãªtre triÃ© par ordre alphabÃ©tique.
 
