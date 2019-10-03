@@ -46,6 +46,23 @@ print(recherche + " est present "+str(occurence)+" fois ")
 #   for line in f:
 #       if occurence_existe(line):
 #         occurence = occurence + 1
+villes = {}
+
+fichier_propre = open('./output/villes-france-comptees.txt', 'w')
+
+with open('villes-france.txt', 'r') as f:
+    for ligne in f:
+        ligne = ligne.rstrip()
+        if ligne not in villes:
+            villes[ligne] = 1
+        else :
+            villes[ligne] = villes[ligne] + 1
+
+for nom_ville in villes.keys() :
+    fichier_propre.write(f'{nom_ville} : {villes[nom_ville]} occurences.\n')
+
+fichier_propre.close()
+
 
 # - CrÃ©er un programme qui va lire le fichier [villes-france.txt](../ressource/villes-france.txt) et crÃ©er un nouveau fichier dans lequel chaque ligne donnera le nom d'une ville en affichant le nombre dâ€™occurrence dans le fichier de dÃ©part. Ce fichier devra Ãªtre triÃ© par ordre alphabÃ©tique.
 
