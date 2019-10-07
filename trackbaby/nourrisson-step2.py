@@ -46,7 +46,7 @@ cranes_gars  = matrice_csv('./perim-cra-age-garcon-0-60-light.csv')
 # Affichage des graphiques à faire
 # matrice de poids 
 poids = plt.subplot(1, 3, 1)
-poids.plot(x(poids_gars[0]), y(poids_gars[1]), y(poids_gars[1]), c='#448abd', linestyle = 'solid', label='5%') # p5
+poids.plot(x(poids_gars[0]), y(poids_gars[1]), c='#448abd', linestyle = 'solid', label='5%') # p5
 poids.plot(x(poids_gars[0]), y(poids_gars[2]), c='#f29739', linestyle = 'solid', label='25%') # p25
 poids.plot(x(poids_gars[0]), y(poids_gars[3]), c='#59a94a', linestyle = 'solid', label='50%') # p50
 poids.plot(x(poids_gars[0]), y(poids_gars[4]), c='#cf4b3e', linestyle = 'solid', label='75%') # p75
